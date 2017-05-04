@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Video Player</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+    <h1 class="page-title">HTML5 Video Player</h1>
+
+    <div class="container">
+
+        <div id="player" class="player">
+
+            <video class="player__video">
+                <source src="video/wavebreakerbirds.mp4.mp4" type="video/mp4" />
+                <source src="video/wavebreakerbirds.webm.webm" type="video/webm" />
+            </video>
+
+            <div class="player__controls">
+                <span class="player__play"></span>
+                <span class="player__time">
+                    <span class="player__time-current">0:00</span>
+                    /
+                    <span class="player__time-total">0:00</span>
+                </span>
+                <span class="player__timeline">
+                    <input type="range" min="0" max="100" step="1" value="0">
+                </span>
+                <span class="player__volume" title="Volume">
+                    <input type="range" min="0" max="100" step="1" value="100">
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
